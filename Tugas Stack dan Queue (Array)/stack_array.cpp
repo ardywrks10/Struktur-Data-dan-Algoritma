@@ -18,7 +18,7 @@ class Stack{
 			stack	= new int[maxTop];
 		}
 		
-		bool stackFull() //stack(tumpukan) telah penuh
+		bool stackFull()
 		{
 			if (top == maxTop - 1)
 			{
@@ -30,7 +30,7 @@ class Stack{
 			}
 		}
 		
-		bool stackEmpty() //belum terdapat stack(tumpukan)
+		bool stackEmpty() 
 		{
 			if (top == -1)
 			{
@@ -42,7 +42,7 @@ class Stack{
 			}
 		}
 		
-		void pushStack(int item) //menambah data pada stack(tumpukan)
+		void pushStack(int item)
 		{
 			if (stackFull())
 			{
@@ -56,7 +56,7 @@ class Stack{
 			}
 		}
 		
-		void popStack() //mengambil data pada stack(tumpukan) 
+		void popStack()
 		{
 			if (stackEmpty())
 			{
@@ -68,7 +68,7 @@ class Stack{
 			}
 		}
 		
-		int peek() //mengecek tumpukan paling atas (top)
+		int peek() 
 		{
 			if (stackEmpty())
 			{
