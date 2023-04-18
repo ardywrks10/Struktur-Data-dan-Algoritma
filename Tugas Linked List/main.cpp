@@ -16,13 +16,12 @@ int main(int argc, char** argv) {
 		cout << "===== PROGRAM LINKED LIST C++ =====" << endl;
 		cout << "1. Insert to Head"      << endl;
 		cout << "2. Insert After Value"  << endl;
-		cout << "3. Insert Before Value" << endl;
-		cout << "4. Insert to Tail"      << endl;
-		cout << "5. Delete from Head"    << endl;
-		cout << "6. Delete by Value"     << endl;
-		cout << "7. Delete from Tail"    << endl;
-		cout << "8. Print Linked List"   << endl;
-		cout << "9. Keluar" << endl;
+		cout << "3. Insert to Tail"      << endl;
+		cout << "4. Delete from Head"    << endl;
+		cout << "5. Delete by Value"     << endl;
+		cout << "6. Delete from Tail"    << endl;
+		cout << "7. Print Linked List"   << endl;
+		cout << "8. Keluar" << endl;
 		cout << "Masukan pilihan : ";
 		cin  >> pilih;
 		
@@ -46,44 +45,35 @@ int main(int argc, char** argv) {
 				break;
 				
 			case 3:
-				cout << ">> Input item : ";
-				cin  >> input;
-				cout << ">> Input value: ";
-				cin  >> item;
-				list1.insertBefore(item, input);
-				getch();
-				break;
-				
-			case 4:
 				cout << ">> Input item   : ";
 				cin  >> input;
 				list1.insertToTail(input);
 				getch();
 				break;
 				
-			case 5:
+			case 4:
 				list1.deleteFromHead();
 				getch();
 				break;
 				
-			case 6:
+			case 5:
 				cout << ">> Input item   : ";
 				cin  >> input;
 				list1.deleteByValue(input);
 				getch();
 				break;
 				
-			case 7:
+			case 6:
 				list1.deleteFromTail();
 				getch();
 				break;
 				
-			case 8:
+			case 7:
 				list1.printAll();
 				getch();
 				break;
 				
-			case 9:
+			case 8:
 				cout << ">> Terimakasih";
 				getch();
 				break;
@@ -96,7 +86,7 @@ int main(int argc, char** argv) {
 		}
 		system ("cls");
 		
-	}while (pilih != 9);
+	}while (pilih != 8);
 	
 	return 0;
 }
